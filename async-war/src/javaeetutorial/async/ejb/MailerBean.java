@@ -36,7 +36,8 @@ import javax.mail.internet.MimeMessage;
 @Named
 @Stateless
 public class MailerBean {
-
+	
+	//name of resource JavaMail of application server 
     @Resource(name = "java:jboss/mail/Default")
     private Session session;
 
@@ -51,9 +52,10 @@ public class MailerBean {
             properties.put("mail.smtp.port", "3025");
             session = Session.getInstance(properties);            
             Message message = new MimeMessage(session);
-            String from = "from@test.com";
             
+            String from = "from_address@test.com";
             message.setFrom(new InternetAddress(from));;
+            
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(email, false));
             message.setSubject("Test message from async example");
