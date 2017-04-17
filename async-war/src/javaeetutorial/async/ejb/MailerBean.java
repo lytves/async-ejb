@@ -51,7 +51,9 @@ public class MailerBean {
             properties.put("mail.smtp.port", "3025");
             session = Session.getInstance(properties);            
             Message message = new MimeMessage(session);
-            message.setFrom();
+            String from = "from@test.com";
+            
+            message.setFrom(new InternetAddress(from));;
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(email, false));
             message.setSubject("Test message from async example");
