@@ -16,4 +16,4 @@ This two aplications is demanstation of implementation asynchronous business met
 
 1) running a module __*async-smtpd*__ project, Run as --> Java Aplication in your IDE. In the output console tab show the results and future messages
 
-2) deploy module __*async-war*__ on your aplication server, open URL http://localhost:8080/async-war/ and enter a email in a form for and press "Send message"
+2) deploy module __*async-war*__ on your aplication server, open URL http://localhost:8080/async-war/ and enter a email in a form and press "Send email"
