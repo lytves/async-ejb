@@ -18,6 +18,6 @@ This two aplications is demonstration of implementation asynchronous business me
 
 + In order to compile the __*async-smtpd*__ example you have to update the resource name of JavaMail in class *MailerBean*
 
-*in case of servidor WildFly as specified in the  Management Console (Configuration > Subsystems > Mail > default > Attributes).
+  *in case of servidor WildFly as specified in the  Management Console (Configuration > Subsystems > Mail > default > Attributes).
 
 + deploy module __*async-war*__ on your aplication server, open URL http://localhost:8080/async-war/ and enter a email in a form and press "Send email"
