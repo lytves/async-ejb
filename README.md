@@ -16,7 +16,7 @@ This two aplications is demonstration of implementation asynchronous business me
 
 + running a module __*async-smtpd*__ project, Run as --> Java Aplication in your IDE. In the output console tab show the results and future messages
 
-+ In order to compile the __*async-smtpd*__ example you have to update the resource name of JavaMail in class *MailerBean*
++ In order to compile the __*async-war*__ example you have to update the resource name of JavaMail in class *MailerBean*
 
   *in case of servidor WildFly as specified in the  Management Console (Configuration > Subsystems > Mail > default > Attributes).
 
